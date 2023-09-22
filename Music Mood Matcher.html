@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/index.html?# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Mood Matcher</title>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="./Music Mood Matcher_files/bootstrap.min.css">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="./Music Mood Matcher_files/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./Music Mood Matcher_files/style.css">
+  <style>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */</style></head>
+  <body>
+    <h1>Music Mood Matcher</h1>
+    <!-- search bar -->
+    <section>
+      <nav class="navbar bg-body-primary">
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </section>
+    <!-- recommendation cards -->
+    <section>
+      <div class="card mt-5" style="width: 18rem">
+        <img src="./Music Mood Matcher_files/Music.avif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Song's Name</h5>
+          <p class="card-text">
+            </p><ul class="list-unstyled">
+                <li>Artist's name</li>
+                <li>Release Date</li>
+                <li>Genre</li>
+            </ul>
+          <p></p>
+          <a href="http://127.0.0.1:5500/index.html?#" class="btn btn-primary">Play</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="./Music Mood Matcher_files/script.js"></script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<div id="veed-recorder-root"><template shadowrootmode="open"><section><div><div class="App" style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;"><iframe title="veed-extension-permissions" allow="camera *; microphone *;" src="chrome-extension://mgipbckfkdcalgbcjmkogjijddnkbecc/iframe.html" style="display: none;"></iframe></div></div></section><link rel="stylesheet" href="chrome-extension://mgipbckfkdcalgbcjmkogjijddnkbecc/content-root.css"></template></div></body></html>
